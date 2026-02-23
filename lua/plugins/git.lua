@@ -51,7 +51,6 @@ return {
 			})
 
 			vim.keymap.set("n", "<leader>gg", neogit.open, { desc = "Open Neogit Status" })
-			vim.keymap.set("n", "<leader>gc", ":Neogit commit<CR>", { desc = "Git Commit" })
 			vim.keymap.set("n", "<leader>gp", ":Neogit pull<CR>", { desc = "Git Pull" })
 			vim.keymap.set("n", "<leader>gP", ":Neogit push<CR>", { desc = "Git Push" })
 		end,
