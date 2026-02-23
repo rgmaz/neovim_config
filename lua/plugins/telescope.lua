@@ -24,11 +24,11 @@ return {
 
 		-- Keymaps
 		local keymap = vim.keymap.set
-		keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find string under cursor" })
-		keymap("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", { desc = "Find string under cursor" })
-		keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find string under cursor" })
-		keymap("n", "<leader>fg", "<cmd>Telescope git_files<cr>", { desc = "Find string under cursor" })
-		keymap("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Find string under cursor" })
-		keymap("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string under cursor" })
+		keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Find open buffers" })
+		keymap("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", { desc = "Find workspace diagnostics" })
+		keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
+		keymap("n", "<leader>fg", "<cmd>Telescope git_files<cr>", { desc = "Find git tracked files" })
+		keymap("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", { desc = "Find keymaps" })
+		keymap("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in workspace (grep)" })
 	end,
 }
