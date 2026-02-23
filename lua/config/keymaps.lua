@@ -21,3 +21,8 @@ map("n", "<Esc>", ":nohlsearch<CR>", opts)
 
 -- Insert Mode to Normal Mode
 map("i", "jk", "<Esc>", opts)
+
+-- Diagnostics
+map("n", "<leader>d", vim.diagnostic.open_float, opts)
+map("n", "[d", vim.diagnostic.goto_prev, opts)
+map("n", "]d", vim.diagnostic.goto_next, opts)
